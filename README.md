@@ -18,3 +18,9 @@
 4. Tuition and Fees: Combined tuition fee rate for out-of-state students. (data type = Integer)
 5. In-State: Combined tuition for in-state students. (data type = Integer)
 6. Undergrad Enrollment: Number of enrolled undergraduates at the school. (data type = Integer)
+
+# Data Visualization Dashboard
+
+![Screenshot 2022-12-18 131654](https://user-images.githubusercontent.com/91602612/208282669-bc365685-4048-4c4e-8e74-8d3585eb2d6e.png)
+
+# Data Analysis
