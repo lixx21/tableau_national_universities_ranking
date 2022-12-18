@@ -1,0 +1,3004 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1211.1636                               -->
+<workbook original-version='18.1' source-build='2019.4.1 (20194.19.1211.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneVisibilityControl ignorable='true' predowngraded='true' />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='National Universities Rankings' inline='true' name='federated.0kticwt1ebd4jb16a1nx409gej4u' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='National Universities Rankings' name='textscan.05ki3ct1ytxzyg113hu7a0gmd9r3'>
+            <connection class='textscan' directory='C:/Users/ASUS/Documents/projects/us_universities_ranking' filename='National Universities Rankings.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.05ki3ct1ytxzyg113hu7a0gmd9r3' name='National Universities Rankings.csv' table='[National Universities Rankings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='index' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Location' ordinal='2' />
+            <column datatype='integer' name='Rank' ordinal='3' />
+            <column datatype='string' name='Description' ordinal='4' />
+            <column datatype='real' name='Tuition and fees' ordinal='5' />
+            <column datatype='real' name='In-state' ordinal='6' />
+            <column datatype='integer' name='Undergrad Enrollment' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[National Universities Rankings.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[National Universities Rankings.csv]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[National Universities Rankings.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[National Universities Rankings.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[National Universities Rankings.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[National Universities Rankings.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tuition and fees</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tuition and fees]</local-name>
+            <parent-name>[National Universities Rankings.csv]</parent-name>
+            <remote-alias>Tuition and fees</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In-state</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[In-state]</local-name>
+            <parent-name>[National Universities Rankings.csv]</parent-name>
+            <remote-alias>In-state</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Undergrad Enrollment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Undergrad Enrollment]</local-name>
+            <parent-name>[National Universities Rankings.csv]</parent-name>
+            <remote-alias>Undergrad Enrollment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
+      <column-instance column='[Location]' derivation='None' name='[none:Location:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.449871' measure-ordering='alphabetic' measure-percentage='0.550129' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Location:nk]' type='palette'>
+            <map to='#49525e'>
+              <bucket>&quot;Vermillion, SD&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Birmingham, AL&quot;</bucket>
+            </map>
+            <map to='#67737c'>
+              <bucket>&quot;Provo, UT&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Fullerton, CA&quot;</bucket>
+            </map>
+            <map to='#8b9598'>
+              <bucket>&quot;Laramie, WY&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Tampa, FL&quot;</bucket>
+            </map>
+            <map to='#b4b7b7'>
+              <bucket>&quot;Hattiesburg, MS&quot;</bucket>
+            </map>
+            <map to='#d5d5d5'>
+              <bucket>&quot;Brookings, SD&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Fresno, CA&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Syracuse, NY&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Name:nk]' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;Columbia University&quot;</bucket>
+            </map>
+            <map to='#347ea1'>
+              <bucket>&quot;University of Chicago&quot;</bucket>
+            </map>
+            <map to='#49525e'>
+              <bucket>&quot;University of Wyoming&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Baylor University&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Maryville University of St. Louis&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ohio State University--Columbus&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Shenandoah University&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Union University&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;University of Cincinnati&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;University of Maine&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;University of North Carolina--Charlotte&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;University of Texas--Dallas&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Worcester Polytechnic Institute&quot;</bucket>
+            </map>
+            <map to='#4ba5ba'>
+              <bucket>&quot;Tufts University&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Adelphi University&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Brandeis University&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Emory University&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kent State University&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;New School&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Robert Morris University&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Temple University&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;University of California--Los Angeles&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;University of Idaho&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;University of Missouri--Kansas City&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;University of South Carolina&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Virginia Commonwealth University&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ashland University&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Dartmouth College&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gardner-Webb University&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Louisiana State University--Baton Rouge&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Northeastern University&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Saint Louis University&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SUNY College of Environmental Science and Forestry&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Texas Tech University&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;University of California--Santa Barbara&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;University of Kansas&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;University of Nevada--Reno&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Villanova University&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Washington University in St. Louis&quot;</bucket>
+            </map>
+            <map to='#67737c'>
+              <bucket>&quot;University of Southern Mississippi&quot;</bucket>
+            </map>
+            <map to='#72bac6'>
+              <bucket>&quot;University of Southern California&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Boston College&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Dallas Baptist University&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Illinois Institute of Technology&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Michigan State University&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Oregon State University&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;St. John Fisher College&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;University of Dayton&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;University of Massachusetts--Boston&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;University of Oklahoma&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;University of Vermont&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Benedictine University&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Colorado State University&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Harvard University&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Massachusetts Institute of Technology&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ohio University&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;University at Albany--SUNY&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;University of Colorado--Boulder&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;University of Maryland--Baltimore County&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;University of North Carolina--Greensboro&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;University of the Pacific&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Yale University&quot;</bucket>
+            </map>
+            <map to='#89c8cc'>
+              <bucket>&quot;Carnegie Mellon University&quot;</bucket>
+            </map>
+            <map to='#8b9598'>
+              <bucket>&quot;University of South Dakota&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Auburn University&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;George Mason University&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Louisiana Tech University&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Northern Illinois University&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;San Diego State University&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Catholic University of America&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;University of California--Santa Cruz&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;University of Kentucky&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;University of St. Thomas&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;West Virginia University&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;University of Pennsylvania&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;California Institute of Technology&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;East Carolina University&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Johns Hopkins University&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;New Jersey Institute of Technology&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Rensselaer Polytechnic Institute&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;University at Buffalo--SUNY&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;University of California--Davis&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;University of Hawaii--Manoa&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;University of Mississippi&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;University of San Diego&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;American University&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Florida Institute of Technology&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lehigh University&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;New York University&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Rochester Institute of Technology&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Tennessee Technological University&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;University of California--Merced&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;University of Illinois--Chicago&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;University of Missouri--St. Louis&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;University of Wisconsin--Madison&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Virginia Tech&quot;</bucket>
+            </map>
+            <map to='#a4a9ab'>
+              <bucket>&quot;South Dakota State University&quot;</bucket>
+            </map>
+            <map to='#ae123a'>
+              <bucket>&quot;College of William &amp; Mary&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Central Michigan University&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Duke University&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Indiana University-Purdue University--Indianapolis&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Montana State University&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Stony Brook University--SUNY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;University of Arkansas&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;University of Georgia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;University of Michigan--Ann Arbor&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;University of Rhode Island&quot;</bucket>
+            </map>
+            <map to='#b4b7b7'>
+              <bucket>&quot;Brigham Young University--Provo&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Azusa Pacific University&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Clemson University&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Loyola University Chicago&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Northwestern University&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Seattle Pacific University&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;University of Alabama&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;University of Central Florida&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;University of La Verne&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;University of New Mexico&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;University of Tennessee&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Western Michigan University&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Boston University&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Georgia Institute of Technology&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Illinois State University&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Michigan Technological University&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pace University&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;St. John&apos;s University&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;University of Alabama--Huntsville&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;University of Massachusetts--Dartmouth&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;University of Oregon&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;University of Virginia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bowling Green State University&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DePaul University&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Immaculata University&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mississippi State University&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Stanford University&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;University of Alaska--Fairbanks&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;University of Denver&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;University of Massachusetts--Lowell&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;University of Washington&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Clark University&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Duquesne University&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Iowa State University&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Montclair State University&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Purdue University--West Lafayette&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Suffolk University&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;University of California--Berkeley&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;University of Hartford&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;University of Minnesota--Twin Cities&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;University of Rochester&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Clarkson University&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Edgewood College&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kansas State University&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;New Mexico State University&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Rice University&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Syracuse University&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;University of California--Irvine&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;University of Houston&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;University of Missouri&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;University of San Francisco&quot;</bucket>
+            </map>
+            <map to='#da323f'>
+              <bucket>&quot;University of Pittsburgh&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Binghamton University--SUNY&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;California State University--Fullerton&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Georgetown University&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hofstra University&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mercer University&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Oklahoma State University&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Southern Illinois University--Carbondale&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;University of Colorado--Denver&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;University of Maryland--College Park&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;University of North Dakota&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;University of Tulsa&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yeshiva University&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;George Washington University&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;University of Alabama--Birmingham&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ball State University&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Marquette University&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nova Southeastern University&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Seton Hall University&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tulane University&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;University of Delaware&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;University of Louisville&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;University of North Carolina--Chapel Hill&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;University of Texas--Austin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Widener University&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Andrews University&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brown University&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;California State University--Fresno&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Florida State University&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lesley University&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;North Carolina State University--Raleigh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Princeton University&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Rutgers University--New Brunswick&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Texas A&amp;M University--College Station&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;University of California--Riverside&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;University of Illinois--Urbana-Champaign&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;University of Montana&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Utah State University&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Wake Forest University&quot;</bucket>
+            </map>
+            <map to='#f36754'>
+              <bucket>&quot;Pennsylvania State University--University Park&quot;</bucket>
+            </map>
+            <map to='#f9856e'>
+              <bucket>&quot;University of New Hampshire&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Case Western Reserve University&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Drexel University&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Indiana University--Bloomington&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Missouri University of Science &amp; Technology&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Pepperdine University&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Stevens Institute of Technology&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;University of Arizona&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;University of Florida&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;University of Miami&quot;</bucket>
+            </map>
+            <map to='#fb9984'>
+              <bucket>&quot;Colorado School of Mines&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Biola University&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cornell University&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Howard University&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Miami University--Oxford&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Old Dominion University&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Southern Methodist University&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;University of Connecticut&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;University of Massachusetts--Amherst&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;University of Notre Dame&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;University of Utah&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;University of South Florida&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Arizona State University--Tempe&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Fordham University&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Lipscomb University&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;North Dakota State University&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Rutgers University--Newark&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Texas Christian University&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;University of California--San Diego&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;University of Iowa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;University of Nebraska--Lincoln&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Vanderbilt University&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Washington State University&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='5 Expensive Tuition and Fees (in-State Student)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Verdana'>5 Expensive Tuition and Fees (In-State Student)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='National Universities Rankings' name='federated.0kticwt1ebd4jb16a1nx409gej4u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kticwt1ebd4jb16a1nx409gej4u'>
+            <column datatype='real' name='[In-state]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[In-state]' derivation='Sum' name='[sum:In-state:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([In-state])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:In-state:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' value='169' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:In-state:qk]</rows>
+        <cols>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</cols>
+      </table>
+      <simple-id uuid='{BD46926B-E43F-419C-9BA0-1273D4125331}' />
+    </worksheet>
+    <worksheet name='5 Most Expensive Universities (Out of State Student)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Verdana'>5 Most Expensive Universities (Out of State Student)</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='National Universities Rankings' name='federated.0kticwt1ebd4jb16a1nx409gej4u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kticwt1ebd4jb16a1nx409gej4u'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Tuition and fees]' role='measure' type='quantitative' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tuition and fees]' derivation='Sum' name='[sum:Tuition and fees:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Tuition and fees])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%all%</bucket>
+              <bucket>&quot;Carnegie Mellon University&quot;</bucket>
+              <bucket>&quot;University of Southern California&quot;</bucket>
+              <bucket>&quot;Tufts University&quot;</bucket>
+              <bucket>&quot;University of Chicago&quot;</bucket>
+              <bucket>&quot;Columbia University&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' value='159' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]</rows>
+        <cols>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</cols>
+      </table>
+      <simple-id uuid='{95948BC5-FDAB-4F95-ACAA-FF7AD39D7114}' />
+    </worksheet>
+    <worksheet name='5 Universities with Least Tuition and Fees (Out of State Student)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Verdana'>5 Universities with Least Tuition and Fees (Out of State Student)</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='National Universities Rankings' name='federated.0kticwt1ebd4jb16a1nx409gej4u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kticwt1ebd4jb16a1nx409gej4u'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Tuition and fees]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Undergrad Enrollment]' role='measure' type='quantitative' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tuition and fees]' derivation='Sum' name='[sum:Tuition and fees:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Undergrad Enrollment]' derivation='Sum' name='[sum:Undergrad Enrollment:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]'>
+            <groupfilter count='5' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Tuition and fees])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' field-type='quantitative' max='15470.52256234848' min='-245.17756509873652' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' value='148' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' />
+              <lod column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Undergrad Enrollment:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]</rows>
+        <cols>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</cols>
+      </table>
+      <simple-id uuid='{05EEE26E-21FC-44F4-9254-4E4E1230E80C}' />
+    </worksheet>
+    <worksheet name='Top 5 Universities'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Verdana'>Top 5 Universities</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='National Universities Rankings' name='federated.0kticwt1ebd4jb16a1nx409gej4u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kticwt1ebd4jb16a1nx409gej4u'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Rank]' role='measure' type='quantitative' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rank]' derivation='Sum' name='[sum:Rank:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]'>
+            <groupfilter count='5' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Rank])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Rank:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' value='53' />
+            <format attr='width' value='5' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' value='332' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Rank:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Rank:qk]' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{8069B519-BF0E-406D-A176-00D2AD364394}' />
+    </worksheet>
+    <worksheet name='Top 5 Universities with Ungrad Enrollment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Verdana'>Top 5 Universities with Undergrad Enrollment</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='National Universities Rankings' name='federated.0kticwt1ebd4jb16a1nx409gej4u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kticwt1ebd4jb16a1nx409gej4u'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Undergrad Enrollment]' role='measure' type='quantitative' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Undergrad Enrollment]' derivation='Sum' name='[sum:Undergrad Enrollment:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Undergrad Enrollment])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' direction='DESC' using='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Undergrad Enrollment:qk]' />
+          <slices>
+            <column>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Undergrad Enrollment:qk]' />
+              <text column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' />
+              <color column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{771EB676-1755-4794-A8C1-025C0F059DBF}' />
+    </worksheet>
+    <worksheet name='Total Tuition and Fees Universities (In-State Students)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Tuition and Fees Universities (In-State Students)&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='National Universities Rankings' name='federated.0kticwt1ebd4jb16a1nx409gej4u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kticwt1ebd4jb16a1nx409gej4u'>
+            <column datatype='real' name='[In-state]' role='measure' type='quantitative' />
+            <column-instance column='[In-state]' derivation='Sum' name='[sum:In-state:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:In-state:qk]' value='Verdana' />
+            <format attr='font-size' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:In-state:qk]' value='16' />
+            <format attr='color' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:In-state:qk]' value='#ff0000' />
+            <format attr='text-align' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:In-state:qk]' value='center' />
+            <format attr='font-weight' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:In-state:qk]' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:In-state:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{88CB6DF5-ED0F-4881-B538-60BF615F7D7D}' />
+    </worksheet>
+    <worksheet name='Total Tuition and Fees Universities (Out-State_students)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Tuition and Fees Universities (Out-State-Students)&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='National Universities Rankings' name='federated.0kticwt1ebd4jb16a1nx409gej4u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kticwt1ebd4jb16a1nx409gej4u'>
+            <column datatype='real' name='[Tuition and fees]' role='measure' type='quantitative' />
+            <column-instance column='[Tuition and fees]' derivation='Sum' name='[sum:Tuition and fees:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' data-class='total' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' value='auto' />
+            <format attr='font-family' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' value='Verdana' />
+            <format attr='font-size' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' value='16' />
+            <format attr='color' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' value='#ff0000' />
+            <format attr='font-weight' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' value='true' />
+            <format attr='break-on-special' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' value='true' />
+            <format attr='show-null-value-warning' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' value='true' />
+            <format attr='alternate-text' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' value='' />
+            <format attr='display-alternate-text' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E36AEE17-C05E-484A-ADF6-60615E386426}' />
+    </worksheet>
+    <worksheet name='Total Universities'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Universities</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='National Universities Rankings' name='federated.0kticwt1ebd4jb16a1nx409gej4u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kticwt1ebd4jb16a1nx409gej4u'>
+            <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
+            <column-instance column='[index]' derivation='Sum' name='[sum:index:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:index:qk]' value='Verdana' />
+            <format attr='font-size' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:index:qk]' value='16' />
+            <format attr='color' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:index:qk]' value='#ff0000' />
+            <format attr='font-weight' field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:index:qk]' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:index:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DA9D5D65-22C9-4701-B10A-90270E131457}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#9f2323' fontname='Tableau Semibold' fontsize='36'>NATIONAL UNIVERSITIES RANKING</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='35' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='40' param='vert' type='layout-flow' w='99000' x='500' y='889'>
+            <zone h='9889' id='41' type='title' w='99000' x='500' y='889'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6889' id='6' name='Total Tuition and Fees Universities (In-State Students)' show-title='false' w='12313' x='47250' y='15778' />
+        <zone h='5667' id='10' name='Total Tuition and Fees Universities (Out-State_students)' show-title='false' w='11563' x='80313' y='16111' />
+        <zone h='37556' id='11' name='Top 5 Universities' w='23938' x='5375' y='33333' />
+        <zone h='4111' id='12' name='Total Universities' show-title='false' w='7688' x='13938' y='17111' />
+        <zone forceUpdate='true' h='5889' id='14' type='text' w='20375' x='8000' y='22444'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e15759' fontname='Tableau Regular' fontsize='16'>TOTAL UNIVERSITIES</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='8444' id='15' type='text' w='22438' x='41125' y='20889'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e15759' fontname='Tableau Regular' fontsize='16'>TOTAL TUITION AND FEES (IN-STATE STUDENTS) in $</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='8222' id='16' type='text' w='27188' x='71688' y='20889'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e15759' fontname='Tableau Regular' fontsize='16'>TOTAL TUITION AND FEES (OUT-STATE STUDENTS) in $</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone h='66889' id='19' name='Top 5 Universities with Ungrad Enrollment' w='29313' x='71063' y='36111' />
+        <zone h='33333' id='20' name='5 Universities with Least Tuition and Fees (Out of State Student)' w='33313' x='125' y='72333' />
+        <zone h='33333' id='22' name='5 Most Expensive Universities (Out of State Student)' w='33313' x='36000' y='72000' />
+        <zone h='33333' id='23' name='5 Expensive Tuition and Fees (in-State Student)' w='33313' x='35875' y='36667' />
+        <zone h='20778' hidden-by-user='true' id='42' layout-strategy-id='distribute-evenly' param='vert' type='layout-flow' w='23500' x='5313' y='8889' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#9f2323' fontname='Tableau Semibold' fontsize='36'>NATIONAL UNIVERSITIES RANKING</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='50' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='49' param='vert' type='layout-flow' w='99000' x='500' y='889'>
+                <zone h='9889' id='41' type='title' w='99000' x='500' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='6889' id='6' is-fixed='true' name='Total Tuition and Fees Universities (In-State Students)' show-title='false' w='12313' x='47250' y='15778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='51' h='5667' id='10' is-fixed='true' name='Total Tuition and Fees Universities (Out-State_students)' show-title='false' w='11563' x='80313' y='16111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='37' h='4111' id='12' is-fixed='true' name='Total Universities' show-title='false' w='7688' x='13938' y='17111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='8444' id='15' type='text' w='22438' x='41125' y='20889'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#e15759' fontname='Tableau Regular' fontsize='16'>TOTAL TUITION AND FEES (IN-STATE STUDENTS) in $</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='8222' id='16' type='text' w='27188' x='71688' y='20889'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#e15759' fontname='Tableau Regular' fontsize='16'>TOTAL TUITION AND FEES (OUT-STATE STUDENTS) in $</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5889' id='14' type='text' w='20375' x='8000' y='22444'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#e15759' fontname='Tableau Regular' fontsize='16'>TOTAL UNIVERSITIES</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37556' id='11' is-fixed='true' name='Top 5 Universities' w='23938' x='5375' y='33333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='66889' id='19' is-fixed='true' name='Top 5 Universities with Ungrad Enrollment' w='29313' x='71063' y='36111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33333' id='23' is-fixed='true' name='5 Expensive Tuition and Fees (in-State Student)' w='33313' x='35875' y='36667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33333' id='22' is-fixed='true' name='5 Most Expensive Universities (Out of State Student)' w='33313' x='36000' y='72000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33333' id='20' is-fixed='true' name='5 Universities with Least Tuition and Fees (Out of State Student)' w='33313' x='125' y='72333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{12EEFA90-82BB-49FD-A4CC-CB109E795E06}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='5 Most Expensive Universities (Out of State Student)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9F816651-5C48-47BD-B05E-5BB4B5050CA5}' />
+    </window>
+    <window class='worksheet' name='5 Universities with Least Tuition and Fees (Out of State Student)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='81'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kticwt1ebd4jb16a1nx409gej4u].[:Measure Names]</field>
+            <field>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Location:nk]</field>
+            <field>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</field>
+            <field>[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Tuition and fees:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A38C9EDB-5597-41D5-A3D5-62A451108066}' />
+    </window>
+    <window class='worksheet' name='Top 5 Universities'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card size='20' type='pages' />
+            <card size='35' type='filters' />
+            <card size='134' type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Rank:ok]</field>
+            <field>[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Rank:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{387FEBB4-61A3-45E7-9949-5369966D0491}' />
+    </window>
+    <window class='worksheet' name='Top 5 Universities with Ungrad Enrollment'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</field>
+            <field>[federated.0kticwt1ebd4jb16a1nx409gej4u].[sum:Undergrad Enrollment:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{94948689-1E36-4140-86B9-C15A3C3F6D91}' />
+    </window>
+    <window class='worksheet' name='5 Expensive Tuition and Fees (in-State Student)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5144B161-F71D-415C-AA5A-54DB7FC45EFE}' />
+    </window>
+    <window class='worksheet' name='Total Tuition and Fees Universities (Out-State_students)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{945FE64D-B4A5-46C3-BF15-556B255D1E6F}' />
+    </window>
+    <window class='worksheet' name='Total Tuition and Fees Universities (In-State Students)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{078C48EE-5C4E-41B5-850A-313132CA4900}' />
+    </window>
+    <window class='worksheet' name='Total Universities'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{418D9F7B-F734-49DE-AE63-32729E370E45}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='5 Expensive Tuition and Fees (in-State Student)'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0kticwt1ebd4jb16a1nx409gej4u].[none:Name:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='5 Most Expensive Universities (Out of State Student)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='5 Universities with Least Tuition and Fees (Out of State Student)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 5 Universities'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Top 5 Universities with Ungrad Enrollment' />
+        <viewpoint name='Total Tuition and Fees Universities (In-State Students)' />
+        <viewpoint name='Total Tuition and Fees Universities (Out-State_students)' />
+        <viewpoint name='Total Universities' />
+      </viewpoints>
+      <active id='40' />
+      <simple-id uuid='{55FD2DAA-1A02-4E5D-8070-18E999B20D6D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='5 Expensive Tuition and Fees (in-State Student)' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='5 Most Expensive Universities (Out of State Student)' width='192'>
+      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
+      Wmh/F0jT2czPs5Bfw23PS71CtMz+A2I8j3hugI5IAMM02zGTEC2zfxdI0+jvP4+GQil5CBCv
+      tgN2gTTCsSTDw8PUK6V2zCREyxywC+SSzy+ysbFB78BgG0YSonUOeBnU48NbvyLbdZ66FgQG
+      dy73XOZmpgnGO1DVbaqeQWdHAsvQcZRJPCJtUHH27D8mWNP5/h/9kHO53De/wbmubqYfLVK3
+      CyQ7e1lZXsB2FFevvobnec9pCLah0Qi47uFNT69Nz3E8TzU1Xxs2HUo1N5vy2jAczW+7Y7dB
+      NT2w/8bPziPA9OwjLl66RL3mMPNwmmDUwqw5NDxFMKChaVrbWoLP0miurdiOpirQ/HZqw3ia
+      1uS2a8+mQ9ObvY19izbogZSLDuRX17G0OqlcF6lYCCtoUnEcrGgYTdMOqKG270Z2Esu8DJrW
+      vus+3EG/w4MWa9O2o9nfbXPra/7zAYwQV14bOfB7seZjJMSp0v79FSHaSAIgfE0CIHxNAiB8
+      TQIgfE0CIHxNAiB8TQIgfE0CIHxNAiB8rekSg/Jcph9OYcXSGG6FqjJJxcOEDA2HEAk5Oa44
+      g5pv8Wgafb29TM0tYBpBAspmubxO1dG4du3qGT05bpvq0K/AyXHVq3xy3ANX6DV4MD3PlZGL
+      TE4+xFMewXAU3bNxGoqQsbM39c2qartOjvvNk/QepF3VbU3Xm5qvXSfHbWY2rY0nx21qvm9z
+      ctwDKYUZgKX8On3nOqgqk1jYJGiaVJwamhk60hW/bKdljoOc7jr06Z4NTna+I9ShLS5dubL7
+      deyZ70Uj0ocWZ5O8CiR8TQIgfE0CIHxNAiB8TQIgfE0CIHxNAiB8TQIgfE0CIHxNAiB87Qhl
+      OI/7X35C79XvkX94DzOaJmwFCGoeRixLUurQ4gxqOgCartOdy+ycCDcYpFgs0qg0KDk6N17v
+      OaN16CbO0PwSuK9AHbptVfJ21aE9r87c3CIBJ05CD1CrOSSTKRJRl41ihUwiArCvqtquOrRh
+      HP5f0/UmKskvQSCgNzVfu+rQzW279tWhm5nvxOvQum5y/Xvf3/36fLM/KMQpJk+Cha9JAISv
+      SQCEr0kAhK9JAISvSQCEr0kAhK9JAISvSQCEr0kAhK8d6YxWjXoN3Qji1h1cdMyAjq5puEph
+      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
+    </thumbnail>
+    <thumbnail height='192' name='5 Universities with Least Tuition and Fees (Out of State Student)' width='192'>
+      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
+      ObA9AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      NW7xAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Top 5 Universities' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Top 5 Universities with Ungrad Enrollment' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='37' name='Total Tuition and Fees Universities (In-State Students)' width='184'>
+      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
+      jAT+BRdPqTa71tzRAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='37' name='Total Tuition and Fees Universities (Out-State_students)' width='184'>
+      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
+    </thumbnail>
+    <thumbnail height='37' name='Total Universities' width='124'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
